@@ -234,3 +234,16 @@ footer p {
   height: 20px;
   width: 15px;
 }
+@keyframes texto {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+h2 {
+  animation-name: texto;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
