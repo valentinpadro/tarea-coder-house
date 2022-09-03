@@ -1,0 +1,63 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+
+.logo {
+  width: 120px;
+  height: 120px; }
+
+.usuario {
+  width: 50px;
+  height: 50px;
+  margin-top: 20px; }
+
+.usuarioName {
+  text-transform: uppercase;
+  font-size: 20px;
+  position: relative;
+  right: 17px; }
+
+.navegacion {
+  width: 100%; }
+  .navegacion nav ul {
+    display: flex;
+    justify-content: space-between; }
+    .navegacion nav ul li {
+      list-style-type: none;
+      display: inline; }
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  background: linear-gradient(to left, #b2ebf2, #00bcd4); }
+
+.links {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 40px;
+  font-size: 20px;
+  color: black;
+  transition: height 0.5s, width 2s; }
+
+.gridPadre {
+  display: grid;
+  grid-template-areas: "imagenUno imagenUno textoUno textoUno" "textoDos textoDos imagenDos imagenDos"; }
+
+@media (max-width: 890px) {
+  .gridPadre {
+    grid-template-areas: "imagenUno" "textoUno" "imagenDos" "textoDos";
+    gap: 50px; }
+  .imagenDos {
+    margin-top: 100px; }
+  .imagenDos img {
+    width: 100%; }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 160px; }
+  .navegacion nav ul li a {
+    text-align: center; } }
