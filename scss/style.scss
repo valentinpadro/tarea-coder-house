@@ -1,5 +1,9 @@
 @import "parteheader";
-
+@import "maps";
+@mixin textoTitulos {
+	text-transform: uppercase;
+	font-size: map-get($tamañofuentes, parah2 );
+}
 body {
     background: linear-gradient(to right, orange, yellow);
   }
@@ -17,14 +21,17 @@ body {
 		padding-left: 30px;
 	}
 }
+.main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 .textoUno {
 	grid-area: textoUno;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    @extend .main;
 	p {
 		width: 90%;
-		font-size: 50px;
+		font-size: map-get($tamañofuentes, parap );
 	}
 }
 .imagenDos {
@@ -36,23 +43,19 @@ body {
 }
 .textoDos {
 	grid-area: textoDos;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    @extend .main;
 	p {
 		width: 90%;
-		font-size: 50px;
+		font-size: map-get($tamañofuentes, parap );
 	}
 }
 .tituloUno {
-	text-transform: uppercase;
-	font-size: 50px;
+    @include textoTitulos;
 	text-align: center;
 }
 .tituloDos {
-	text-transform: uppercase;
+	@include textoTitulos;
 	display: inline;
-	font-size: 50px;
 	padding: 30px;
 }
 footer {
@@ -62,11 +65,7 @@ footer {
 		font-size: 20px;
 	}
 }
-.main {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
+
 .formulario {
 	display: grid;
 	background-color: beige;

@@ -68,6 +68,9 @@ nav ul {
     margin-left: 0px;
     width: 100%; } }
 
+h1 {
+  font-size: 70px; }
+
 body {
   background: linear-gradient(to right, orange, yellow); }
 
@@ -81,11 +84,13 @@ body {
     height: 80%;
     padding-left: 30px; }
 
-.textoUno {
-  grid-area: textoUno;
+.main, .textoUno, .textoDos {
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  align-items: center;
+  justify-content: center; }
+
+.textoUno {
+  grid-area: textoUno; }
   .textoUno p {
     width: 90%;
     font-size: 50px; }
@@ -97,23 +102,20 @@ body {
     height: 70%; }
 
 .textoDos {
-  grid-area: textoDos;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  grid-area: textoDos; }
   .textoDos p {
     width: 90%;
     font-size: 50px; }
 
 .tituloUno {
   text-transform: uppercase;
-  font-size: 50px;
+  font-size: 35px;
   text-align: center; }
 
 .tituloDos {
   text-transform: uppercase;
+  font-size: 35px;
   display: inline;
-  font-size: 50px;
   padding: 30px; }
 
 footer {
@@ -121,11 +123,6 @@ footer {
   footer p {
     text-align: center;
     font-size: 20px; }
-
-.main {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
 
 .formulario {
   display: grid;

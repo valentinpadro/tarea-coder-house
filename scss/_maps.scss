@@ -1,0 +1,4 @@
+$tamañofuentes:(parah1:70px,parah2:35px,parap:50px);
+h1{
+    font-size: map-get($tamañofuentes, parah1);
+}
